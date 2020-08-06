@@ -1,0 +1,114 @@
+:root {
+  --DesaturatedDarkCyan: hsl(180, 29%, 50%);
+  --ShadowCard: hsla(180, 23%, 55%, 0.596);
+  --LightGrayishCyanBg: hsl(180, 52%, 96%);
+  --LightGrayishCyanTablets: hsl(180, 31%, 95%);
+  --DarkGrayishCyan: hsl(180, 8%, 52%);
+  --VeryDarkGrayishCyan: hsl(180, 14%, 20%);
+  --white: white;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: var(--LightGrayishCyanBg);
+  margin: auto;
+}
+.wrapper {
+  margin: auto;
+}
+.container-filters {
+  height: 120px;
+  border-radius: 10px;
+  margin: auto;
+  width: 340px;
+  margin-top: -8em;
+  margin-bottom: 4em;
+  box-shadow: 0 6px 10px var(--ShadowCard);
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-btn.clear {
+  background-color: rgb(240, 246, 242);
+  display: flex;
+  align-items: center;
+  color: var(--DesaturatedDarkCyan);
+  border-radius: 4px 0 0 4px;
+  font-weight: 700;
+  height: 2.5em;
+  margin-right: 1em;
+  margin-bottom: .4em;
+  font-size: .9em;
+}
+.tag-select {
+  margin-top: .3em;
+  padding-left: 0.6em;
+}
+svg {
+  padding: 0.7em;
+  margin-left: .7em;
+  background-color: var(--DesaturatedDarkCyan);
+  border-radius: 0 4px 4px 0;
+}
+a {
+  height: 1.1em;
+  background-color: transparent;
+  width: 3em;
+  position: relative;
+  top: 50px;
+  font-weight: 700;
+  color: var(--DarkGrayishCyan);
+  font-family: "Spartan", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.3em;
+  left: -35px;
+}
+a:hover {
+  color: var(--DesaturatedDarkCyan);
+  border-bottom: 1px solid var(--DesaturatedDarkCyan);
+}
+ @media screen and (min-width: 768px){
+  .container-filters{
+    width: 670px;
+    height: 120px;
+    
+  }.tag-select {
+    margin-top: 1.2em;
+    padding-left: 0.6em;
+  }
+  .search{
+    margin: auto 0;
+  }
+  .search span{
+    margin-bottom: 1em !important;
+  }
+  a{
+    margin: auto auto;
+    position: unset;
+    margin-right: 4em;
+  }
+ }
+ @media screen and (min-width: 1300px){
+  .container-filters{
+    width: 1115px;
+    height: 70px;
+    
+  }
+  a{
+    position: initial;
+    margin: auto;
+    padding: 0;
+    margin-right: 4em;
+    margin-top: 1.9em;
+  }
+
+ }

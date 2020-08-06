@@ -1,0 +1,16 @@
+header{
+  height: 156px;
+  margin: auto;
+  background: url("../../images/bg-header-mobile.svg") center center no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-color: #5DA5A4;
+  margin-bottom: 4em;
+}
+/* @media screen and (min-width:720px){
+  header{
+    background: url("../../images/bg-header-desktop.svg") center center no-repeat;
+    background-color: #5DA5A4;
+    background-size: cover;
+  }
+} */
